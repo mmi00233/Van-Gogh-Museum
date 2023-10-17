@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Gogh Museum</title>
+
+    <!-- 오픈그래프 설정-->
+    <meta property="og:title" content="Van Gogh Museum"><!-- 타이틀 -->
+    <meta property="og:url" content="http://test.dothome.co.kr"><!-- 도메인 -->
+    <meta property="og:description" content="반 고흐의 삶을 엿볼 수 있는 곳, 빈센트 박물관"><!-- 간략한 설명, 모토나 슬로건,  -->
+    <meta property="og:image" content="images/common/og_img.jpg"><!-- 이미지 비율이 있음 (크기는 없음) 2:1 비율 -->
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="images/common/VanGogh_Museum_favi.ico"><!-- 크기 : 16*16 -->
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css"><!-- 한글 폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jaldi:wght@400;700&family=Noto+Serif+Gujarati:wght@200;300&family=Reenie+Beanie&display=swap"
+        rel="stylesheet"><!-- 영문 폰트 -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- cdn방식으로 적용 -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            new fullpage('#fullpage', {
+                navigation: true,
+                responsiveWidth: 1280,
+                anchors: ['menu1', 'menu2', 'menu3', 'menu4'],
+                navigationTooltips: ['아쿠아플라넷63', '프로그램', '이용안내', '혜택안내'],
+                autoScrolling: true,
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="inner">
+
+            <h1><a href="index.html"><img src="images/common/VanGogh_Museum_Logo.png" alt="Van Gogh Museum Logo"></a>
+            </h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li><a href="sub/museum.html">MUSEUM</a>
+                        <ul class="depth2">
+                            <li><a href="sub/museum.html">Museum</a></li>
+                            <li><a href="sub/tikets.html">Tikets</a></li>
+                            <li><a href="sub/museum-shop.html">Museum Shop</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub/Van-Gogh.html">VAN GOGH</a>
+                        <ul class="depth2">
+                            <li><a href="sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="sub/art-collection.html">ART & STORIES</a>
+                        <ul class="depth2">
+                            <li><a href="sub/art-collection.html">Art</a></li>
+                            <li><a href="sub/search.html">Search the Collection</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- gnb -->
+
+                <div class="ham">
+                    <span>메뉴보기</span>
+                </div> <!-- ham -->
+
+                <div class="mgnb_wrap">
+                    <div class="mgnb">
+                        <ul>
+                            <li class="a">MUSEUM
+                                <ul class="mdepth2">
+                                    <li><a href="sub/museum.html">Museum</a></li>
+                                    <li><a href="sub/tikets.html">Tikets</a></li>
+                                    <li><a href="sub/museum-shop.html">Museum Shop</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="a">VAN GOGH</a>
+                                <ul class="mdepth2">
+                                    <li><a href="sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="a">ART & STORIES
+                                <ul class="mdepth2">
+                                    <li><a href="sub/art-collection.html">Art</a></li>
+                                    <li><a href="sub/search.html">Search the Collection</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="mgnb_close">Close</div>
+                    </div> <!-- mgnb -->
+                </div> <!-- mgnb_wrap -->
+            </nav>
+
+            <ul class="util">
+                <li class="search"><img src="images/common/icon_search.svg" alt="검색"></li>
+                <li class="language"><a href="#">KR<i class="down bi bi-caret-down-fill"></i></a>
+                    <ul>
+                        <li><a href="./html/en/index.html">EN</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- util -->
+
+        </div> <!-- inner -->
+
+        <div class="search_wrap">
+            <form>
+                <fieldset>
+                    <legend>검색영역</legend>
+                    <input type="text" title="검색어 입력" placeholder="검색어를 입력해 주세요.">
+                    <input type="submit" value="검색">
+                </fieldset>
+            </form>
+
+            <i class="bi bi-x-lg search_close" aria-label="검색영역닫기"></i>
+        </div> <!-- search_wrap -->
+    </header>
+
+    <div id="fullpage"> 
+
+
+
+        <section id="main_visual" class="section">
+
+            <video src="images/main/LovingVincent_cut.mp4" autoplay muted loop playsinline data-autoplay></video>
+
+            <div class="inner">
+
+                <div class="title">
+                    <h2>Discover the Life and Work of</h2>
+                    <img class="images01" src="images/main/main_visual_VanGogh_01.svg" alt="반 고흐 텍스트">
+                    <img class="images02" src="images/main/main_visual_VanGogh_02.svg" alt="반 고흐 텍스트">
+                    <img class="images03" src="images/main/main_visual_VanGogh_03.svg" alt="반 고흐 텍스트">
+                    <img class="images04" src="images/main/main_visual_VanGogh_04.svg" alt="반고흐 텍스트">
+                </div>
+
+            </div> <!-- inner -->
+        </section> <!-- main_visual -->
+
+
+
+        <section id="VanGogh" class="section">
+            <div class="inner">
+
+                <div class="left"><img src="images/main/VanGogh_1887.jpg" alt="1887년 반고흐 자화상"></div> <!-- left -->
+
+                <div class="right">
+                    <img class="title_text" src="images/main/Welcom to Vincent Van Gogh Museum.png"
+                        alt="Welcom to Vincent Van Gogh Museum">
+
+                    <div class="text">
+                        <p>빈센트 발럼 반 고흐는 네덜란드의 화가로서 선명한 색채와 정서적인 감화로 서양 미술사상 가장 위대한 화가 중 한 사람으로 설명이 됩니다. 그는 그의 작품 전부를
+                            정신질환을 앓고 자살을 감행하기 전 10년의 짧은 기간동안 그림을 그렸던 것으로 알려져있습니다. 그는 살아있는 동안 거의 성공을 거두지 못하고 사후에 비로소
+                            알려졌는데, 특히 1901년 3월 17일 파리에서 71점의 그림을 전시한 이후 명성을 얻게 되었습니다. 흔히 탈인상주의 화가로 분류되며, 또한 인상파, 야수파, 초기
+                            추상화, 표현주의에 미친 영향이 굉장히 크기 때문에 20세기 예술의 여러 다른 분야에 영감을 준 것으로 유명합니다. </p>
+
+                        <p class="VanGogh_text02">그는 어릴 적 부터 그림을 그리기 시작한 많은 작가들과는 달리, 20세 후반까지 그림을 그리지 않았습니다. 반 고흐의 유명한
+                            작품들은 거의 생애 마지막 2년 동안 그려진 작품들이며, 반 고흐는 살아생전 900여 점의 페인팅, 1,100여 점의 드로잉과 스케치 등 총 2,000여 점의 작품을
+                            남겼습니다. </p>
+
+                        <p class="VanGogh_text03">현재 수많은 사람들의 사랑을 받고 있는 반 고흐. 그렇기에 반 고흐 박물관은 수많은 사람들이 다녀가는 관광 명소로 손꼽히며,
+                            현재 전 세계에서 반 고흐의 작품을 가장 많이 소장하고 있는 박물관입니다.</p>
+                    </div>
+                </div> <!-- right -->
+
+            </div> <!-- inner -->
+        </section> <!-- VanGogh -->
+
+        <section id="collection" class="section">
+            <div class="inner">
+
+                <h2>VAN GOGH'S</h2>
+                <p>MASTERPIECE</p>
+                <div class="arrow"><a href="sub/art-collection.html">바로가기</a></div>
+
+                <div class="swiper collection_list">
+                    <ul class="swiper-wrapper">
+
+                        <li class="swiper-slide">
+                            <img src="images/main/collection001.jpg" alt="별이 빛나는 밤, The Starry Night">
+
+                            <div class="list">
+                                <dl class="bg_01">
+                                    <dt>별이 빛나는 밤</dt>
+                                    <dd>빈센트 반 고흐 (1853 - 1890), 생 레미, 1889년</dd>
+                                </dl>
+
+                                <div class="btn_more"><a href="#">자세히 알아보기</a></div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <img src="images/main/collection002.jpg" alt="밤의 카페 테라스, Café Terrace at Night">
+
+                            <div class="list">
+                                <dl class="bg_01">
+                                    <dt>밤의 카페 테라스</dt>
+                                    <dd>빈센트 반 고흐 (1853 - 1890), 아를, 1888년</dd>
+                                </dl>
+
+                                <div class="btn_more"><a href="#">자세히 알아보기</a></div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <img src="images/main/collection003.jpg" alt="해바라기, Sunflower">
+
+                            <div class="list">
+                                <dl class="bg_01">
+                                    <dt>해바라기</dt>
+                                    <dd>빈센트 반 고흐 (1853 - 1890), 아를, 1888년</dd>
+                                </dl>
+
+                                <div class="btn_more"><a href="#">자세히 알아보기</a></div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <img src="images/main/collection004.jpg" alt="아를의 침실, Bedroom in Arles">
+
+                            <div class="list">
+                                <dl class="bg_01">
+                                    <dt>아를의 침실</dt>
+                                    <dd>빈센트 반 고흐 (1853 - 1890), 아를, 1888년</dd>
+                                </dl>
+
+                                <div class="btn_more"><a href="#">자세히 알아보기</a></div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <img src="images/main/collection006.jpg" alt="꽃피는 아몬드 나무, Almond Blossoms">
+
+                            <div class="list">
+                                <dl class="bg_01">
+                                    <dt>꽃피는 아몬드 나무</dt>
+                                    <dd>빈센트 반 고흐 (1853 - 1890), 생레미, 1890년</dd>
+                                </dl>
+
+                                <div class="btn_more"><a href="#">자세히 알아보기</a></div>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <img src="images/main/collection005.jpg" alt="까마귀가 나는 밀밭, Wheat Field with Crows">
+
+                            <div class="list">
+                                <dl class="bg_01">
+                                    <dt>까마귀가 나는 밀밭</dt>
+                                    <dd>빈센트 반 고흐 (1853 - 1890), 오베르쉬르우아즈, 1890년 7월</dd>
+                                </dl>
+
+                                <div class="btn_more"><a href="#">자세히 알아보기</a></div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div> <!-- swiper collection_list -->
+
+
+            </div> <!-- inner -->
+        </section> <!-- collection -->
+
+        <section id="museum" class="section">
+
+            <video src="images/main/VanGogh_museum.mp4" autoplay loop muted playsinline data-autoplay></video>
+
+            <div class="inner">
+
+                <div class="sub_title">
+
+                    <h2>VAN GOGH MUSEUM</h2>
+                    <p>"I dream of painting and then I pain my dream"</p>
+
+                    <div class="btn_more"><a href="sub/museum.html">자세히 알아보기</a></div>
+
+                </div>
+            </div> <!-- inner -->
+        </section> <!-- museum -->
+
+        <section id="store" class="section">
+            <div class="inner">
+
+                <h2>ONLINE<br><span class="text">
+                        STORE</span></h2>
+                <div class="arrow"><a href="sub/museum-shop.html">바로가기</a></div>
+
+                <div class="swiper store_list">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img src="images/main/product_1.jpg" alt="제품사진 빈센트 반 고흐의 편지1">
+                                    <img src="images/main/product_1-1.jpg" alt="제품사진 빈센트 반 고흐의 편지1-1">
+                                </a>
+                            </div><!-- thumbnail -->
+                            <h3 class="name">
+                                <a href="#">빈센트 반 고흐의 편지</a>
+                                <p class="price">504,000원</p>
+                            </h3>
+                        </li> <!-- swiper-slide -->
+
+                        <li class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img src="images/main/product_2.png" alt="제품사진 반 고흐 우산 - 붓꽃1">
+                                    <img src="images/main/product_2-1.jpg" alt="제품사진 반 고흐 우산 - 붓꽃 편지1-1">
+                                </a>
+                            </div><!-- thumbnail -->
+                            <h3 class="name">
+                                <a href="#">반 고흐 우산 - 붓꽃</a>
+                                <p class="price">30,000원</p>
+                            </h3>
+                        </li> <!-- swiper-slide -->
+
+                        <li class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img src="images/main/product_3.jpg" alt="제품사진 빈센트 반 고흐의 편지1">
+                                    <img src="images/main/product_3-1.jpg" alt="제품사진 빈센트 반 고흐의 편지1-1">
+                                </a>
+                            </div><!-- thumbnail -->
+                            <h3 class="name">
+                                <a href="#">빈센트 반 고흐의 편지</a>
+                                <p class="price">504,000원</p>
+                            </h3>
+                        </li> <!-- swiper-slide -->
+
+                        <li class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img src="images/main/product_4.jpg" alt="제품사진 반 고흐 찻잔 - 아몬드 나무1">
+                                    <img src="images/main/product_4-1.jpg" alt="제품사진 반 고흐 찻잔 - 아몬드 나무1-1">
+                                </a>
+                            </div><!-- thumbnail -->
+                            <h3 class="name">
+                                <a href="#">반 고흐 찻잔 - 아몬드 나무</a>
+                                <p class="price">504,000원</p>
+                            </h3>
+                        </li> <!-- swiper-slide -->
+
+                        <li class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img src="images/main/product_5.jpg" alt="제품사진 빈센트 반 고흐 엽서 세트1">
+                                    <img src="images/main/product_5-1.jpg" alt="제품사진 빈센트 반 고흐 엽서 세트1-1">
+                                </a>
+                            </div><!-- thumbnail -->
+                            <h3 class="name">
+                                <a href="#">빈센트 반 고흐 엽서 세트</a>
+                                <p class="price">20,000원</p>
+                            </h3>
+                        </li> <!-- swiper-slide -->
+
+                        <li class="swiper-slide">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img src="images/main/product_6.png" alt="제품사진 반 고흐 캔들 - 아몬드 나무1">
+                                    <img src="images/main/product_6-1.png" alt="제품사진 반 고흐 캔들 - 아몬드 나무1-1">
+                                </a>
+                            </div><!-- thumbnail -->
+                            <h3 class="name">
+                                <a href="#">반 고흐 캔들 - 아몬드 나무</a>
+                                <p class="price">54,000원</p>
+                            </h3>
+                        </li> <!-- swiper-slide -->
+
+                    </ul> <!-- swiper-wrapper -->
+
+                    <div class="swiper-scrollbar"></div>
+                </div> <!-- swiper product_list -->
+
+
+            </div> <!-- inner -->
+        </section> <!-- store -->
+
+
+
+
+        <footer id="footer" class="section fp-auto-height">
+            <div class="inner">
+
+                <div class="left">
+                    <a href="index.html"><img src="images/common/VanGogh_Museum_Logo.png"
+                            alt="van gogh museum logo"></a>
+                    <p>Van Gogh Museum <br>
+                        Museumplein 6, 1071 DJ Amsterdam <br>
+                        +31 (0) 888-800-853</p>
+                </div> <!-- left -->
+
+                <div class="middle">
+                    <ul class="organiztion">
+                        <li class="title">ORGANIZATION</li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">News & Press</a></li>
+                        <li><a href="#">Organization</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Working with Us</a></li>
+                    </ul> <!-- organiztion -->
+
+                    <ul class="museum">
+                        <li class="title">MUSEUM</li>
+                        <li><a href="#">Address</a></li>
+                        <li><a href="#">Opening Hours</a></li>
+                        <li><a href="#">Tickets
+                            </a></li>
+                        <li><a href="#">Museum Shop</a></li>
+                    </ul> <!-- museum -->
+
+
+
+                    <ul class="information">
+                        <li class="title">INFORMATION</li>
+                        <li><a href="#">Accessibillty</a></li>
+                        <li><a href="#">Privacy & Cookies</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">Use & Permisions</a></li>
+                        <li><a href="#">Of Collection Images</a></li>
+                    </ul> <!-- information -->
+                </div> <!-- middle -->
+
+                <div class="right">
+                    <div class="images">
+                        <img src="images/main/icon_facebook.png" alt="facebook">
+                        <img src="images/main/icon_youtube.png" alt="youtube">
+                        <img src="images/main/icon_twitter.png" alt="twitter">
+                        <img src="images/main/icon_wifi.png" alt="wifi">
+                    </div>
+                    <p>&copy; Van Gogh Museum of Art. All Rights reserved.</p>
+                </div> <!-- right -->
+
+            </div> <!-- inner -->
+        </footer>
+
+
+    </div> <!-- wrap -->
+
+</body>
+
+</html>
