@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Gogh Museum</title>
+    <!-- 오픈그래프 설정-->
+    <meta property="og:title" content="Van Gogh Museum"><!-- 타이틀 -->
+    <meta property="og:url" content="http://test.dothome.co.kr"><!-- 도메인 -->
+    <meta property="og:description" content="반 고흐의 삶을 엿볼 수 있는 곳, 빈센트 박물관"><!-- 간략한 설명, 모토나 슬로건,  -->
+    <meta property="og:image" content="../../images/common/og_img"><!-- 이미지 비율이 있음 (크기는 없음) 2:1 비율 -->
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../../images/common/VanGogh_Museum_favi.ico"><!-- 크기 : 16*16 -->
+
+    <!-- font -->
+    <link rel="stylesheet" href="../css/font.css"><!-- 한글 폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jaldi:wght@400;700&family=Noto+Serif+Gujarati:wght@200;300&family=Reenie+Beanie&display=swap"
+        rel="stylesheet"><!-- 영문 폰트 -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- cdn방식으로 적용 -->
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/sub_Gogh-timeline.css">
+
+    <!-- js -->
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../../js/sub.js"></script>
+  
+  
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="inner">
+
+            <h1><a href="../../index.html"><img src="../../images/common/VanGogh_Museum_Logo.png"
+                        alt="Van Gogh Museum Logo"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li><a href="../../sub/museum.html">MUSEUM</a>
+                        <ul class="depth2">
+                            <li><a href="../../sub/museum.html">Museum</a></li>
+                            <li><a href="../../sub/tikets.html">Tikets</a></li>
+                            <li><a href="../../sub/museum-shop.html">Museum Shop</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../../sub/Van-Gogh.html">VAN GOGH</a>
+                        <ul class="depth2">
+                            <li><a href="../../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../../sub/art-collection.html">ART & STORIES</a>
+                        <ul class="depth2">
+                            <li><a href="../../sub/art-collection.html">Art</a></li>
+                            <li><a href="../../sub/search.html">Search the Collection</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- gnb -->
+
+                <div class="ham">
+                    <span>메뉴보기</span>
+                </div> <!-- ham -->
+
+                <div class="mgnb_wrap">
+                    <div class="mgnb">
+                        <ul>
+                            <li class="a"><a href="../../sub/museum.html">MUSEUM</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../../sub/museum.html">Museum</a></li>
+                                    <li><a href="../../sub/tikets.html">Tikets</a></li>
+                                    <li><a href="../../sub/museum-shop.html">Museum Shop</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="a"><a href="../../sub/Van-Gogh.html">VAN GOGH</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="a"><a href="../../sub/art-collection.html">ART & STORIES</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../../sub/art-collection.html">Art</a></li>
+                                    <li><a href="../../sub/search.html">Search the Collection</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="mgnb_close">Close</div>
+                    </div> <!-- mgnb -->
+                </div> <!-- mgnb_wrap -->
+            </nav>
+
+            <ul class="util">
+                <li class="search"><img src="../../images/common/icon_search.svg" alt="검색"></li>
+                <li class="language"><a href="#">KR<i class="down bi bi-caret-down-fill"></i></a>
+                    <ul>
+                        <li><a href="./html/en/index.html">EN</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- util -->
+
+        </div> <!-- inner -->
+
+        <div class="search_wrap">
+            <form>
+                <fieldset>
+                    <legend>검색영역</legend>
+                    <input type="text" title="검색어 입력" placeholder="검색어를 입력해 주세요.">
+                    <input type="submit" value="검색">
+                </fieldset>
+            </form>
+
+            <i class="bi bi-x-lg search_close" aria-label="검색영역닫기"></i>
+        </div> <!-- search_wrap -->
+    </header>
+
+    <div id="wrap">
+
+        <main id="container">
+            <section id="timeline">
+
+                <div class="inner">
+                    <h2>VAN GOGH'S <br>
+                        <span class="title">TIMELINE</span>
+                    </h2>
+
+                    <div class="text">
+                        <div class="left">
+                            <div class="left01" data-aos="fade-right" data-aos-duration="1000">
+                                <h3>유년 시절</h3>
+
+                                <div class="timeline01 clearfix">
+                                    <p>빈센트 반 고흐는 네덜란드 남부 노르트브라반트주 쥔더르트에서 네덜란드 개혁교회 목사 테오도뤼스 반 고흐와 아나 코르넬리아 반 고흐카르벤튀스 부부의
+                                        맏아들로 태어났습니다.</p>
+                                    <p>고흐가 11살이 되자 부모는 그를 쥔더르트에서 25km 떨어진 제벤베르헌의 개신교 교사가 운영하는 기숙학교에 가게 되었고, 이곳에서 고흐는
+                                        프랑스어와 영어를 기초부터 배워 유창하게 말할 수 있게 되었다고 합니다.</p>
+                                    <p>13살이 되자 제벤베르헌에서 기초교육을 마친 후, 쥔더르트에서 더 멀리 떨어진 틸뷔르흐의 빌럼 2세 국립중학교로 진학하게 되었습니다. 이 학교는
+                                        당시로서는 매우 이례적으로 미술이 교과 커리큘럼에 하나로 도입되어 있었고, 고흐는 그 선생님 밑에서 미술 수업을 받게 되었습니다.</p>
+                                    <p>15살이 된 고흐는 갑자기 학교를 자퇴하고 집으로 돌아갔습니다. 왜 자퇴하였는지는 수수께끼지만 학자들은 이때 고흐가 정신장애나 발작이 있지
+                                        않았을까라는 추측을 하고 있으며, 이에 대한 근거로는 고흐의 집안은 정신병력이 있었는데 이게 고흐에게도 유전되었을 가능성이 있다고 말합니다.
+                                    </p>
+                                    <p>16세 때 큰아버지 센트의 주선으로 헤이그의 미술상인 구필 화랑에서 일을 시작하게 됩니다.</p>
+                                </div>
+                            </div> <!-- left01 -->
+
+                            <div class="left02" data-aos="fade-right" data-aos-duration="1000">
+                                <h3>뇌넨 시절</h3>
+
+                                <div class="timeline02 clearfix">
+                                    <p>뇌넨 시절 고흐는 드렌테 남부의 호헤벤에 도착하게 됩니다. 그곳에서 고흐는 알베르튀스 하르트소이케르라는 사람의 집에서 하숙하며 본격적으로 화가의
+                                        길을 모색하기 시작했습니다.</p>
+                                    <p>이 때의 고흐는 아무도 가르쳐주는 사람이 없었기에 고흐 스스로 그림의 기법을 익혀나갑니다. 그렇기 때문에 아직 색채의 활용이라는 측면에서는
+                                        미숙하였으며, 고흐는 자신의 마음대로 되지 않는 그림 실력에 다른 화가의 도움이 필요하다는 것을 깨닫게 됩니다.</p>
+                                    <p>고흐는 뇌넨의 성당 관리인이던 요한네스 스하프라트에게 방을 빌려 그곳에서 그림을 그리게 되었고, 고흐는 이곳에서 야외에 나가 그림을 그리거나
+                                        야외에서 그림을 그리기 어려우면 산책하면서 가져온 갖가지 잡동사니를 가지고 정물화를 그리기도 했습니다.</p>
+                                    <p>1885년, 고흐는 이때까지의 작업들을 총결산하는 의미의 대작을 구상하게 됩니다. 실마리는 우연한 기회에 찾아왔는데 1885년 3월의 어느 날에
+                                        고흐는 호르트라는 농부의 집을 지나치다가 그 집에 들어가게 되었고, 그때 호르트의 가족들은 석유램프 불빛 아래서 감자를 먹고 있었습니다. 고흐는
+                                        이 광경을 그림으로 그리기로 결심을 하게 되었지만 아버지의 죽음이 겹치고 고흐는 창작열이 쇠퇴하기 시작하였습니다. 이를 만회하기 위해 고흐는
+                                        들라크루아의 색채론은 탐독하기 시작했으며 미완성이였던 감자먹는 사람들을 다시 그리기 시작했고, 감자먹는 사람들은 고흐의 전기를 정리하는
+                                        대작이자, 고흐가 보리나주에서부터 그토록 원했던 가난하고 소외된 사람들을 그리고 싶다는 열망의 성취였습니다.</p>
+                                </div>
+
+                                <div class="photo_list">
+                                    <div class="b01">
+                                        <img src="../../images/sub/timeline03.png" alt="감자먹는 사람들">
+                                        <p class="work">감자먹는 사람들<br>
+                                            <span class="b1">빈센트 반 고흐(1853~1890), 뉘넨, 1885년 4~5월</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="b02">
+                                        <img src="../../images/sub/timeline04.png" alt="새 둥지">
+                                        <p class="work">새 둥지<br>
+                                            <span>빈센트 반 고흐(1853~1890), 뉘넨, 1885년 9월~10월</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> <!-- left02 -->
+
+                            <div class="left03" data-aos="fade-right" data-aos-duration="1000">
+                                <h3>아를 시절</h3>
+
+                                <div class="timeline03 clearfix">
+                                    <p>아를에서 화가들의 공동체를 꿈꾸었던 그는 아는 화가들에게 모두 편지를 써보내서 화가 공동체를 만들자고 제안했습니다. 하지만 그런 제안에 응했던
+                                        사람은 유일하게 폴 고갱 정도였다고 합니다. 하지만 둘의 그림 스타일은 많이 달랐고, 고흐는 밀레의 영향을 받아 자연을 있는 그대로 그리는 것을
+                                        좋아한 반면에 고갱은 기억에 의존해서 창의적으로 그려내는 방식을 선호했습니다. 그렇기에 둘의 갈등은 심화되었고, 그로인해 고갱이 온 지 두달이
+                                        약간 지난 1888년 고흐는 정신병 발작을 일으켜 면도칼로 자신의 귀를 자르게 되는 참사가 발생하게 됩니다. 이후 고흐는 생레미 생폴 정신병원에
+                                        입원하게 됩니다.</p>
+                                </div>
+
+                                <div class="photo_list">
+                                    
+
+                                    <div class="c01">
+                                        <img src="../../images/sub/timeline08.png" alt="아를의 밤의 카페">
+                                        <p class="work">아를의 밤의 카페<br>
+                                        <span>폴 고갱(1848~1903), 아를, 1888년</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="c02">
+                                        <img src="../../images/sub/timeline09.png" alt="해바라기를 그리는 고흐">
+                                        <p class="work">해바라기를 그리는 고흐<br>
+                                        <span>폴 고갱(1848~1903), 아를, 1888</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="c03">
+                                        <img src="../../images/sub/timeline07.png" alt="아를의 여인">
+                                        <p class="work">아를의 여인<br>
+                                        <span>빈센트 반 고흐(1853~1890), 아를, 1888년</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> <!-- left03 -->
+
+                            <div class="left04" data-aos="fade-right" data-aos-duration="1000">
+                                <h3>오베르 시절</h3>
+
+                                <div class="timeline04 clearfix">
+                                    <p>생레미의 정신병원에서 퇴원할 날이 가까워지자 동생 테오는 형이 지낼 만한 좋은 장소를 물색하기 시작했습니다. 오베르는 파리에서 가까운 편이면서도
+                                        밀밭과 자연 풍광이 좋은 시골 마을이라 이미 여러 유명한 화가들이 오베르에 가서 그림을 그리곤 했다고 전해집니다. 또한 화가들과 교분을 나누던
+                                        의사 폴 가셰가 있었기 때문에 병의 치료에도 도움이 될 거라 믿어 1890년 5월에 생레미의 요양원을 퇴원한 고흐를 오베르로 보내게 됩니다.
+                                    </p>
+                                </div>
+
+                                <div class="photo_list">
+                                    <div class="d01">
+                                        <img src="../../images/sub/timeline12.png" alt="까마귀가 나는 밀밭">
+                                        <p class="work">까마귀가 나는 밀밭<br>
+                                        <span>빈센트 반 고흐(1853~1890), 오베르, 1890년 7월</span>
+                                    </div>
+                                </div>
+                            </div> <!-- left04 -->
+                        </div> <!-- left -->
+
+                        <div class="right">
+
+                            <div class="right01" data-aos="fade-left" data-aos-duration="1000">
+                                <h3>브뤼셀과 헤이그 시절</h3>
+
+                                <div class="ee clearfix">
+                                    <p>브뤼셀로 온 고흐는 화가가 되기 위해 조언을 구하기 시작했습니다. 브뤼셀의 미술 아카데미에 들어가는 게 상식적이고 일반적 코스이긴 했지만 고흐는 독학으로 실력을 쌓는 것을 더 좋아하였기 때문에 고흐는 독학으로 자신의 그림 실력을 쌓았습니다. 테오는 파리 미술계에 불던 인상주의나 종합주의 같은 새로운 미술 사조들을 편지를 통해 형 고흐에게 알려주기도 하였지만 미술을 글로 설명하기에는 굉장히 어려워 고흐의 인상주의나 새로운 미술사조에 대한 이해는 상당히 늦은 편이이었습니다. 그러나 그 때문에 오히려 고흐의 독특한 화풍이 생겨날 수 있었다고 보는 시각이 지배적입니다.</p>
+                                </div>
+
+                                <div class="photo_list">
+                                    <div class="e01">
+                                        <img src="../../images/sub/timeline01.png" alt="이탄 들판의 소작농 여성">
+                                        <p class="work">이탄 들판의 소작농 여성<br>
+                                        <span>빈센트 반 고흐(1853~1890), 니우암스테르담, 1883년 10월</span></p>
+                                    </div>
+
+                                    <div class="e02">
+                                        <img src="../../images/sub/timeline02.png" alt="드렌테의 풍경">
+                                        <p class="work">드렌테의 풍경<br>
+                                        <span>빈센트 반 고흐(1853~1890), 드렌테, 1883년 9~10월</span></p>
+                                    </div>
+                                </div>
+                            </div> <!-- right01 -->
+
+                            <div class="right02" data-aos="fade-left" data-aos-duration="1000">
+                                <h3>파리 시절</h3>
+
+                                <div class="ff clearfix">
+                                    <p>일본의 우키요에에 영향을 받아 그 동안 렘브란트와 밀레의 어두운 화풍이 주류였던 인상주의를 밝은 화풍으로 바꾸게 되었습니다. 그러나 곧 대도시의 생활에 싫증을 느꼈고 그는 프랑스의 시골 아를로 이주해 그곳에서 계속 그림을 그리게 되었습니다.</p>
+                                </div>
+
+                                <div class="photo_list">
+                                    <div class="f01">
+                                        <img src="../../images/sub/timeline05.png" alt="투명한 유리병에 담긴 물과 싱그러운 레몬">
+                                        <p class="work">투명한 유리병에 담긴 물과 레몬<br>
+                                        <span>빈센트 반 고흐(1853~1890), 파리, 1887년 2~3월</span></p>
+                                    </div>
+
+                                    <div class="f02">
+                                        <img src="../../images/sub/timeline06.png" alt="꽃피는 매화나무">
+                                        <p class="work">꽃피는 매화나무<br>
+                                        <span>빈센트 반 고흐(1853~1890), 파리, 1887년 10~11월</span></p>
+                                    </div>
+                                </div>
+                            </div> <!-- right02 -->
+
+                            <div class="right03" data-aos="fade-left" data-aos-duration="1000">
+                                <h3>생레미 시절</h3>
+
+                                <div class="gg clearfix">
+                                    <div>
+                                        <p>생레미 시절에 고흐의 후기 걸작으로 일컬어지는 작품들이 여럿 나왔습니다. 그 중 반고흐의 대표작 중 하나인 "별이 빛나는 밤"과 사이프러스 나무를 소재로 한 작품 등이 있습니다.</p>
+                                        <p>살아생전 전혀 인정받지 못하고 고독하게 죽은 듯한 느낌이 강한 고흐의 이미지와는 다르게 그는 이 시기에 몇몇 전시회에 그의 그림이 초청받고 호평받으며 서서히 이름이 알려지고 있었다고 합니다. 그의 생애에서 유일하게 그림이 팔린 시기도 이때. 하지만 오히려 그는 앞의 내용을 신경쓰기보다는 화가로서 훌륭한 작품을 남기는 데 더 집중했다고 전해졌지만 건강악화로 인해 우울증이 온 건지 이때까지의 그의 그림에 스스로 혹평하는 일이 잦아졌고 그림이 생각대로 안 그려지는 것에 대한 비관도 심했다고 합니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="photo_list">
+                                    <div class="g02">
+                                        <img src="../../images/sub/timeline11.png" alt="별이 빛나는 밤">
+                                        <p class="work">별이 빛나는 밤<br>
+                                        <span>빈센트 반 고흐(1853~1890), 생레미, 1889년 6월</span></p>
+                                    </div>
+
+                                    <div class="g01">
+                                        <img src="../../images/sub/timeline10.png" alt="사이프러스가 있는 밀밭">
+                                        <p class="work">사이프러스가 있는 밀밭<br>
+                                        <span>빈센트 반 고흐(1853~1890), 생레미, 1889년 7월</span></p>
+                                    </div> 
+                                </div>
+                            </div> <!-- right03 -->
+
+                            <div class="right04" data-aos="fade-left" data-aos-duration="1000">
+                                <h3>그의 마지막</h3>
+
+                                <div class="hh clearfix">
+                                    <div>
+                                        <p>1890년 7월 27일, 고흐는 결국 쇠약해진 몸과 정신을 이겨내지 못하고 프랑스제 권총으로 자살을 시도합니다. 하지만 심장을 아슬아슬하게 빗나가 즉사하지 않고 총알이 가슴을 관통해 척추에 걸려 손상을 입게되었습니다. 후에 총알을 빼낼 수 있었지만 고흐는 총알에 의한 감염으로 고통스러워하다 이틀 후인 1890년 7월 29일에 숨을 거두게됩니다.</p>
+                                        <p>하지만 반 고흐의 죽음은 여러가지 설들로 학자들은 주장합니다. 권총자살이 아닌 살해 당했다는 의견도 여럿 있었으며 최근에는 사망 전 18개월 동안 조울증이나 경계성 장애를 앓고 있어 이런 증상들이 복합적으로 작용해 자살에 이르게 되었을 것이라고 전문가들이 주장하고 있습니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="photo_list">
+                                    <div class="h01">
+                                        <img src="../../images/sub/timeline13.png" alt=" 반 고흐의 자살을 보도한 기사">
+                                        <p class="work">1890년 8월 7일 반 고흐의 자살을 보도한 기사</p>
+                                    </div>
+                                </div>
+                            </div> <!-- right04 -->
+
+                        </div> <!-- right -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer id="footer">
+            <div class="inner">
+
+                <div class="left">
+                    <a href="../../index.html"><img src="../../images/common/VanGogh_Museum_Logo.png"
+                            alt="van gogh museum logo"></a>
+                    <p>Van Gogh Museum <br>
+                        Museumplein 6, 1071 DJ Amsterdam <br>
+                        +31 (0) 888-800-853</p>
+                </div> <!-- left -->
+
+                <div class="middle">
+                    <ul class="organiztion">
+                        <li class="title">ORGANIZATION</li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">News & Press</a></li>
+                        <li><a href="#">Organization</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Working with Us</a></li>
+                    </ul> <!-- organiztion -->
+
+                    <ul class="museum">
+                        <li class="title">MUSEUM</li>
+                        <li><a href="#">Address & Opening Hours</a></li>
+                        <li><a href="#">Tickets
+                            </a></li>
+                        <li><a href="#">Museum Shop</a></li>
+                    </ul> <!-- museum -->
+
+                    <ul class="information">
+                        <li class="title">INFORMATION</li>
+                        <li><a href="#">Accessibillty</a></li>
+                        <li><a href="#">Privacy & Cookies</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">Use & Permisions</a></li>
+                        <li><a href="#">Of Collection Images</a></li>
+                    </ul> <!-- information -->
+                </div> <!-- middle -->
+
+                <div class="right">
+                    <div class="images">
+                        <img src="../../images/main/icon_facebook.png" alt="facebook">
+                        <img src="../../images/main/icon_youtube.png" alt="youtube">
+                        <img src="../../images/main/icon_twitter.png" alt="twitter">
+                        <img src="../../images/main/icon_wifi.png" alt="wifi">
+                    </div>
+                    <p>&copy; Van Gogh Museum of Art. All Rights reserved.</p>
+                </div> <!-- right -->
+
+            </div> <!-- inner -->
+        </footer>
+    </div>
+
+    <script>
+        AOS.init({
+            disable: 'mobile',
+        });
+      </script>
+</body>
+
+</html>

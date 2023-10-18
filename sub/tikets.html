@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Gogh Museum</title>
+    <!-- 오픈그래프 설정-->
+<meta property="og:title" content="Van Gogh Museum"><!-- 타이틀 -->
+<meta property="og:url" content="http://test.dothome.co.kr"><!-- 도메인 -->
+<meta property="og:description" content="반 고흐의 삶을 엿볼 수 있는 곳, 빈센트 박물관"><!-- 간략한 설명, 모토나 슬로건,  -->
+<meta property="og:image" content="../images/common/og_img"><!-- 이미지 비율이 있음 (크기는 없음) 2:1 비율 -->
+
+<!-- 파비콘 -->
+<link rel="shortcut icon" href="../images/common/VanGogh_Museum_favi.ico"><!-- 크기 : 16*16 -->
+
+<!-- font -->
+<link rel="stylesheet" href="../css/font.css"><!-- 한글 폰트 -->
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jaldi:wght@400;700&family=Noto+Serif+Gujarati:wght@200;300&family=Reenie+Beanie&display=swap" rel="stylesheet"><!-- 영문 폰트 -->
+
+<!-- css -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> <!-- cdn방식으로 적용 -->
+<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/sub_tikets.css">
+
+<!-- js -->
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/sub.js"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div class="inner">
+
+            <h1><a href="../index.html"><img src="../images/common/VanGogh_Museum_Logo.png" alt="Van Gogh Museum Logo"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li><a href="../sub/museum.html">MUSEUM</a>
+                        <ul class="depth2">
+                            <li><a href="../sub/museum.html">Museum</a></li>
+                            <li><a href="../sub/tikets.html">Tikets</a></li>
+                            <li><a href="../sub/museum-shop.html">Museum Shop</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../sub/Van-Gogh.html">VAN GOGH</a>
+                        <ul class="depth2">
+                            <li><a href="../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../sub/art-collection.html">ART & STORIES</a>
+                        <ul class="depth2">
+                            <li><a href="../sub/art-collection.html">Art</a></li>
+                            <li><a href="../sub/search.html">Search the Collection</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- gnb -->
+
+                <div class="ham">
+                    <span>메뉴보기</span>
+                </div> <!-- ham -->
+
+                <div class="mgnb_wrap">
+                    <div class="mgnb">
+                        <ul>
+                            <li class="a"><a href="../sub/museum.html">MUSEUM</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/museum.html">Museum</a></li>
+                                    <li><a href="../sub/tikets.html">Tikets</a></li>
+                                    <li><a href="../sub/museum-shop.html">Museum Shop</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="a"><a href="../sub/Van-Gogh.html">VAN GOGH</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="a"><a href="../sub/art-collection.html">ART & STORIES</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/art-collection.html">Art</a></li>
+                                    <li><a href="../sub/search.html">Search the Collection</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="mgnb_close">Close</div>
+                    </div> <!-- mgnb -->
+                </div> <!-- mgnb_wrap -->
+            </nav>
+
+            <ul class="util">
+                <li class="search"><img src="../images/common/icon_search.svg" alt="검색"></li>
+                <li class="language"><a href="#">KR<i class="down bi bi-caret-down-fill"></i></a>
+                    <ul>
+                        <li><a href="./html/en/index.html">EN</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- util -->
+
+        </div> <!-- inner -->
+
+        <div class="search_wrap">
+            <form>
+                <fieldset>
+                    <legend>검색영역</legend>
+                    <input type="text" title="검색어 입력" placeholder="검색어를 입력해 주세요.">
+                    <input type="submit" value="검색">
+                </fieldset>
+            </form>
+
+            <i class="bi bi-x-lg search_close" aria-label="검색영역닫기"></i>
+        </div> <!-- search_wrap -->
+    </header>
+
+    <div id="wrap">
+
+        <main id="container">
+
+            <section id="information">
+                <h2>TICKET RESERVATION</h2>
+
+                <div class="info">
+                    <div class="left">
+                        <h3>관람시간</h3>
+
+                        <div class="info_left" data-aos="fade-right" data-aos-duration="1000">
+                            <h4>2022년 9월 30일</h4>
+                            <p>월요일~목요일: 오전 9시~오후 5시</p>
+
+                            <h4>2022년 10월 1일 - 9일</h4>
+                            <p>월요일~목요일: 오전 9시~오후 5시 <br>
+                            금요일~일요일: 오전 9시~오후 6시</p>
+
+                            <h4>2022년 10월 10일 - 31일</h4>
+                            <p>월요일~목요일: 오전 9시~오후 5시</p>
+                            <p class="abc">※ 2022년 10월 11일 화요일: 오전 9시~오후 5시</p>
+
+                            <h4>2022년 11월 1일 - 12월 18일</h4>
+                            <p>월요일~목요일: 오전 9시~오후 5시</p>
+
+                          <h4>2022년 12월 19일 - 31일</h4>
+                            <p>금요일~일요일: 오전 9시~오후 6시</p>
+                            <p class="abc">※ 12월 24일~12월 26일: 오전 9시~오후 5시 <br>
+                            ※ 12월 31일: 오전 9시 ~ 오후 5시</p>
+                        </div>
+                    </div> <!-- left -->
+
+                    <div class="right">
+                        <h3>관람요금</h3>
+                    
+                        <div class="info_right" data-aos="fade-left" data-aos-duration="1000">
+                            <h4>성인 (2022년 10월 7일부터 가격 변동)</h4>
+                            <p>26,000원</p>
+
+                            <h4>18세 미만 청소년</h4>
+                            <P>무료(학교단체 제외)</P>
+
+                            <h4>대학생</h4>
+                            <p>14,000원</p>
+                        </div>
+                    </div> <!-- right -->
+                </div>
+
+            </section> <!-- information -->
+
+            <section id="map">
+                <h2>Way to Come</h2>
+
+                <div class="group">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.661787563542!2d4.878886915994631!3d52.35841915594346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609ef96d35a5f%3A0xc22828aef97cc51a!2z67CYIOqzoO2dkCDrr7jsiKDqtIA!5e0!3m2!1sko!2skr!4v1666063528194!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" div data-aos="fade-right" data-aos-duration="1000"></iframe>
+
+                    <div class="right">
+                        <h3>주소</h3>
+                        <p div data-aos="fade-left" data-aos-duration="1000">Museumplein 6, 1071 DJ Amsterdam</p>
+                    </div>
+                </div> <!-- group -->
+            </section> <!-- map -->
+
+        </main>  <!-- container -->
+        
+        <footer id="footer">
+            <div class="inner">
+
+                <div class="left">
+                    <a href="../index.html"><img src="../images/common/VanGogh_Museum_Logo.png" alt="van gogh museum logo"></a>
+                    <p>Van Gogh Museum <br>
+                        Museumplein 6, 1071 DJ Amsterdam <br>
+                        +31 (0) 888-800-853</p>
+                </div> <!-- left -->
+
+                <div class="middle">
+                    <ul class="organiztion">
+                        <li class="title">ORGANIZATION</li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">News & Press</a></li>
+                        <li><a href="#">Organization</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Working with Us</a></li>
+                    </ul> <!-- organiztion -->
+
+                    <ul class="museum">
+                        <li class="title">MUSEUM</li>
+                        <li><a href="#">Address & Opening Hours</a></li>
+                        <li><a href="#">Tickets
+                        </a></li>
+                        <li><a href="#">Museum Shop</a></li>
+                    </ul> <!-- museum -->
+
+                    <ul class="information">
+                        <li class="title">INFORMATION</li>
+                        <li><a href="#">Accessibillty</a></li>
+                        <li><a href="#">Privacy & Cookies</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">Use & Permisions</a></li>
+                        <li><a href="#">Of Collection Images</a></li>
+                    </ul> <!-- information -->
+                </div> <!-- middle -->
+
+                <div class="right">
+                    <div class="images">
+                        <img src="../images/main/icon_facebook.png" alt="facebook">
+                        <img src="../images/main/icon_youtube.png" alt="youtube">
+                        <img src="../images/main/icon_twitter.png" alt="twitter">
+                        <img src="../images/main/icon_wifi.png" alt="wifi">
+                    </div>
+                    <p>&copy; Van Gogh Museum of Art. All Rights reserved.</p>
+                </div> <!-- right -->
+
+            </div> <!-- inner -->
+        </footer>
+        
+    </div> <!-- search_wrap -->
+
+    <script>
+        AOS.init({
+            disable: 'mobile',
+        });
+      </script>
+    
+</body>
+</html>

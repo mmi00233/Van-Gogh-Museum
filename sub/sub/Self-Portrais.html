@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Gogh Museum</title>
+        <!-- 오픈그래프 설정-->
+        <meta property="og:title" content="Van Gogh Museum"><!-- 타이틀 -->
+        <meta property="og:url" content="http://test.dothome.co.kr"><!-- 도메인 -->
+        <meta property="og:description" content="반 고흐의 삶을 엿볼 수 있는 곳, 빈센트 박물관"><!-- 간략한 설명, 모토나 슬로건,  -->
+        <meta property="og:image" content="../../images/common/og_img"><!-- 이미지 비율이 있음 (크기는 없음) 2:1 비율 -->
+    
+        <!-- 파비콘 -->
+        <link rel="shortcut icon" href="../../images/common/VanGogh_Museum_favi.ico"><!-- 크기 : 16*16 -->
+    
+        <!-- font -->
+        <link rel="stylesheet" href="../css/font.css"><!-- 한글 폰트 -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jaldi:wght@400;700&family=Noto+Serif+Gujarati:wght@200;300&family=Reenie+Beanie&display=swap"
+            rel="stylesheet"><!-- 영문 폰트 -->
+    
+        <!-- css -->
+        <link rel="stylesheet" href="../../css/common.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <!-- cdn방식으로 적용 -->
+        <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../../css/ani.css">
+        <link rel="stylesheet" href="../../css/sub_Portrais.css">
+    
+        <!-- js -->
+        <script src="../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../js/swiper-bundle.min.js"></script>
+        <script src="../../js/sub.js"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div class="inner">
+
+            <h1><a href="../../index.html"><img src="../../images/common/VanGogh_Museum_Logo.png"
+                        alt="Van Gogh Museum Logo"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li><a href="../../sub/museum.html">MUSEUM</a>
+                        <ul class="depth2">
+                            <li><a href="../../sub/museum.html">Museum</a></li>
+                            <li><a href="../../sub/tikets.html">Tikets</a></li>
+                            <li><a href="../../sub/museum-shop.html">Museum Shop</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../../sub/Van-Gogh.html">VAN GOGH</a>
+                        <ul class="depth2">
+                            <li><a href="../../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../../sub/art-collection.html">ART & STORIES</a>
+                        <ul class="depth2">
+                            <li><a href="../../sub/art-collection.html">Art</a></li>
+                            <li><a href="../../sub/search.html">Search the Collection</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- gnb -->
+
+                <div class="ham">
+                    <span>메뉴보기</span>
+                </div> <!-- ham -->
+
+                <div class="mgnb_wrap">
+                    <div class="mgnb">
+                        <ul>
+                            <li class="a"><a href="../../sub/museum.html">MUSEUM</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../../sub/museum.html">Museum</a></li>
+                                    <li><a href="../../sub/tikets.html">Tikets</a></li>
+                                    <li><a href="../../sub/museum-shop.html">Museum Shop</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="a"><a href="../../sub/Van-Gogh.html">VAN GOGH</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="a"><a href="../../sub/art-collection.html">ART & STORIES</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../../sub/art-collection.html">Art</a></li>
+                                    <li><a href="../../sub/search.html">Search the Collection</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="mgnb_close">Close</div>
+                    </div> <!-- mgnb -->
+                </div> <!-- mgnb_wrap -->
+            </nav>
+
+            <ul class="util">
+                <li class="search"><img src="../../images/common/icon_search_white.svg" alt="검색"></li>
+                <li class="language"><a href="#">KR<i class="down bi bi-caret-down-fill"></i></a>
+                    <ul>
+                        <li><a href="./html/en/index.html">EN</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- util -->
+
+        </div> <!-- inner -->
+
+        <div class="search_wrap">
+            <form>
+                <fieldset>
+                    <legend>검색영역</legend>
+                    <input type="text" title="검색어 입력" placeholder="검색어를 입력해 주세요.">
+                    <input type="submit" value="검색">
+                </fieldset>
+            </form>
+
+            <i class="bi bi-x-lg search_close" aria-label="검색영역닫기"></i>
+        </div> <!-- search_wrap -->
+    </header>
+
+    <div id="wrap">
+
+        <main id="container">
+            <section id="self">
+                <div class="inner">
+
+                    <div class="title">
+                        <h2>Self-Portrais</h2>
+                        <p class="sub_text">반 고흐는 화가로서의 기술을<br> 
+                            연습하기 위해 수많은 자화상을 그렸습니다.</p>
+
+                        <div class="search_bar">
+                            <form>
+                                <fieldset>
+                                    <legend>검색영역</legend>
+                                    <input type="text" title="검색어 입력" placeholder="작품 및 아티스트 검색">
+                                    <input type="submit" value="검색">
+                                </fieldset>
+                            </form>
+                        </div> <!-- search_wrap -->
+                    </div> <!-- title -->
+
+                    <div class="list">
+
+                        <div class="art">
+                            <div class="group01">
+                                <dl class="art01">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait01.png" alt="화가로서의 자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">화가로서의 자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 12월 - 1888년 2월 <br>
+                                    캔버스에 유채, 65.1cm x 50cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art01 -->
+
+                                <dl class="art02">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait02.png" alt="회색 펠트 모자를 쓴 자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">회색 펠트 모자를 쓴 자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 9월 - 10월 <br>
+                                    면에 유채, 44.5cm x 37.2cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art02 -->
+
+                                <dl class="art03">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait03.png" alt="밀짚 모자를 쓴 자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">밀짚 모자를 쓴 자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 7월 - 8월 <br>
+                                    캔버스에 유채, 41.8cm x 31.5cm <br>
+                                    크레딧 : 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art03 -->
+
+                                <dl class="art04">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait04.png" alt="자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 3월 - 6월 <br>
+                                    판지에 유채, 41cm x 33cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art04 -->
+                            </div>
+
+                            <div class="group02">
+                                <dl class="art05">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait05.png" alt="파이프를 물고 밀짚모자를 쓴 자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">파이프를 물고<br> 밀짚모자를 쓴 자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 7월 - 8월 <br>
+                                    캔버스에 유채, 42.5cm x 32.1cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art05 -->
+
+                                <dl class="art06">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait06.png" alt="자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 7월 - 8월 <br>
+                                    캔버스에 유채, 43.2cm x 31.3cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art06 -->
+
+                                <dl class="art07">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait07.png" alt="자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 7월 - 8월 <br>
+                                    캔버스에 유채, 42.2cm x 34.5cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art07 -->
+
+                                <dl class="art08">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait08.png" alt="자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 7월 - 8월 <br>
+                                    캔버스에 유채, 44.5cm x 33.6cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art08 -->
+                            </div>
+                            
+                            <div class="group03">
+                                <dl class="art09">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait09.png" alt="자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 3월 - 6월 <br>
+                                    판지에 유채, 19.1cm x 14.1cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art09 -->
+
+                                <dl class="art10">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait10.png" alt="자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 여름 <br>
+                                    판지에 유채, 19.0cm x 14.1cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art10 -->
+
+                                <dl class="art11">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait11.png" alt="테오 반 고흐의 초상">
+                                    </dt>
+
+                                    <dd class="sub_title">테오 반 고흐의 초상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 여름 <br>
+                                    판지에 유채, 19.0cm x 14.1cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art11 -->
+
+                                <dl class="art12">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait12.png" alt="파이프 담배를 문 자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">파이프 담배를 문 자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1886년 9월 - 11월 <br>
+                                    캔버스에 유채, 46.0cm x 38.0cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art12 -->
+                            </div>
+
+                            <div class="group04">
+                                <dl class="art13">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait13.png" alt="자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1886년 3월 - 6월 <br>
+                                    캔버스에 유채, 27.2cm x 19.0cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art13 -->
+
+                                <dl class="art14">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait14.png" alt="펠트 모자를 쓰고 이젤 앞에 앉은 자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">펠트 모자를 쓰고<br> 이젤 앞에 앉은 자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1886년 9월 - 11월 <br>
+                                    캔버스에 유채, 46.5cm x 38.5cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art14 -->
+
+                                <dl class="art15">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait15.png" alt="잔이 있는 자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">잔이 있는 자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1887년 1월 <br>
+                                    캔버스에 유채, 61.1cm x 50.2cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art15 -->
+
+                                <dl class="art16">
+                                    <dt>
+                                        <img src="../../images/sub/self_portrait16.png" alt="회색 펠트 모자를 쓴 자화상">
+                                    </dt>
+
+                                    <dd class="sub_title">회색 펠트 모자를 쓴 자화상</dd>
+                                    <dd class="text">파리 <br>
+                                    1886년 12월 - 1887년 1월 <br>
+                                    캔버스에 유채, 41.5cm x 32.5cm <br>
+                                    크레딧: 반 고흐 미술관, 암스테르담</dd>
+                                    <dd class="btn_more"><a href="sub/Self-Portrait-as-a-Painter.html">자세히 알아보기</a></dd>
+                                </dl> <!-- art16 -->
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </section> <!-- self -->
+        </main>
+
+        <footer id="footer">
+            <div class="inner">
+
+                <div class="left">
+                    <a href="../../index.html"><img src="../../images/common/VanGogh_Museum_Logo.png"
+                            alt="van gogh museum logo"></a>
+                    <p>Van Gogh Museum <br>
+                        Museumplein 6, 1071 DJ Amsterdam <br>
+                        +31 (0) 888-800-853</p>
+                </div> <!-- left -->
+
+                <div class="middle">
+                    <ul class="organiztion">
+                        <li class="title">ORGANIZATION</li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">News & Press</a></li>
+                        <li><a href="#">Organization</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Working with Us</a></li>
+                    </ul> <!-- organiztion -->
+
+                    <ul class="museum">
+                        <li class="title">MUSEUM</li>
+                        <li><a href="#">Address & Opening Hours</a></li>
+                        <li><a href="#">Tickets
+                            </a></li>
+                        <li><a href="#">Museum Shop</a></li>
+                    </ul> <!-- museum -->
+
+                    <ul class="information">
+                        <li class="title">INFORMATION</li>
+                        <li><a href="#">Accessibillty</a></li>
+                        <li><a href="#">Privacy & Cookies</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">Use & Permisions</a></li>
+                        <li><a href="#">Of Collection Images</a></li>
+                    </ul> <!-- information -->
+                </div> <!-- middle -->
+
+                <div class="right">
+                    <div class="images">
+                        <img src="../../images/main/icon_facebook.png" alt="facebook">
+                        <img src="../../images/main/icon_youtube.png" alt="youtube">
+                        <img src="../../images/main/icon_twitter.png" alt="twitter">
+                        <img src="../../images/main/icon_wifi.png" alt="wifi">
+                    </div>
+                    <p>&copy; Van Gogh Museum of Art. All Rights reserved.</p>
+                </div> <!-- right -->
+
+            </div> <!-- inner -->
+        </footer>
+    </div>
+
+
+    
+</body>
+</html>

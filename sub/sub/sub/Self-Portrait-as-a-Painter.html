@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Gogh Museum</title>
+    <!-- 오픈그래프 설정-->
+    <meta property="og:title" content="Van Gogh Museum"><!-- 타이틀 -->
+    <meta property="og:url" content="http://test.dothome.co.kr"><!-- 도메인 -->
+    <meta property="og:description" content="반 고흐의 삶을 엿볼 수 있는 곳, 빈센트 박물관"><!-- 간략한 설명, 모토나 슬로건,  -->
+    <meta property="og:image" content="../../../images/common/og_img"><!-- 이미지 비율이 있음 (크기는 없음) 2:1 비율 -->
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../../../images/common/VanGogh_Museum_favi.ico"><!-- 크기 : 16*16 -->
+
+    <!-- font -->
+    <link rel="stylesheet" href="../../../css/font.css"><!-- 한글 폰트 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jaldi:wght@400;700&family=Noto+Serif+Gujarati:wght@200;300&family=Reenie+Beanie&display=swap"
+        rel="stylesheet"><!-- 영문 폰트 -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../../css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- cdn방식으로 적용 -->
+    <link rel="stylesheet" href="../../../css/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/Self-Portrait-as-a-Painter.css">
+
+    <!-- js -->
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../../js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../../../js/sub.js"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div class="inner">
+
+            <h1><a href="../../../index.html"><img src="../../../images/common/VanGogh_Museum_Logo.png"
+                        alt="Van Gogh Museum Logo"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li><a href="../../../sub/museum.html">MUSEUM</a>
+                        <ul class="depth2">
+                            <li><a href="../../../sub/museum.html">Museum</a></li>
+                            <li><a href="../../../sub/tikets.html">Tikets</a></li>
+                            <li><a href="../../../sub/museum-shop.html">Museum Shop</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../../../sub/Van-Gogh.html">VAN GOGH</a>
+                        <ul class="depth2">
+                            <li><a href="../../../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../../../sub/art-collection.html">ART & STORIES</a>
+                        <ul class="depth2">
+                            <li><a href="../../../sub/art-collection.html">Art</a></li>
+                            <li><a href="../../../sub/search.html">Search the Collection</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- gnb -->
+
+                <div class="ham">
+                    <span>메뉴보기</span>
+                </div> <!-- ham -->
+
+                <div class="mgnb_wrap">
+                    <div class="mgnb">
+                        <ul>
+                            <li class="a"><a href="../../../sub/museum.html">MUSEUM</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../../../sub/museum.html">Museum</a></li>
+                                    <li><a href="../../../sub/tikets.html">Tikets</a></li>
+                                    <li><a href="#">Museum Shop</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="a"><a href="../../../sub/Van-Gogh.html">VAN GOGH</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../../../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="a"><a href="../../../sub/art-collection.html">ART & STORIES</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../../../sub/art-collection.html">Art</a></li>
+                                    <li><a href="../../../sub/search.html">Search the Collection</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="mgnb_close">Close</div>
+                    </div> <!-- mgnb -->
+                </div> <!-- mgnb_wrap -->
+            </nav>
+
+            <ul class="util">
+                <li class="search"><img src="../../../images/common/icon_search_white.svg" alt="검색"></li>
+                <li class="language"><a href="#">KR<i class="down bi bi-caret-down-fill"></i></a>
+                    <ul>
+                        <li><a href="./html/en/index.html">EN</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- util -->
+
+        </div> <!-- inner -->
+
+        <!-- <div class="img">
+            <img src="../../../images/sub/collection01.jpg" alt="화가로서의 자화상">
+
+            <div class="close">Close</div>
+        </div> -->
+
+        <div class="search_wrap">
+            <form>
+                <fieldset>
+                    <legend>검색영역</legend>
+                    <input type="text" title="검색어 입력" placeholder="검색어를 입력해 주세요.">
+                    <input type="submit" value="검색">
+                </fieldset>
+            </form>
+
+            <i class="bi bi-x-lg search_close" aria-label="검색영역닫기"></i>
+        </div> <!-- search_wrap -->
+    </header>
+
+    <div id="wrap">
+
+        <main id="container">
+            <section id="title">
+                <div class="inner">
+
+                    <div class="top">
+
+                        <div class="left" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="../../../images/sub/self_portrait01.png" alt="화가로서의 자화상">
+                        </div> <!-- left -->
+
+                        <div class="right" data-aos="fade-left" data-aos-duration="1000">
+                            <h2>화가로서의 자화상</h2>
+                            <p class="en">Self-Portrait as a Painter</p>
+                            <p class="sub">빈센트 반 고흐 (1853 - 1890), 파리, 1887년 12월 - 1888년 2월</p>
+
+                            <p class="text01">이 자화상에서 반 고흐는 이젤 뒤에 팔레트와 붓을 들고 화가로 등장했습니다. 그는 밝고 거의 혼합되지 않은 색상의 새로운 그림 스타일을 사용하여 자신이 현대 예술가임을 보여주었습니다. 팔레트에는 빨간색/녹색, 노란색/보라색 및 파란색/주황색의 보색 이 포함되어 있습니다. 이 그림에 반 고흐가 사용한 색상입니다. 그는 이 보색을 나란히 놓아 서로를 더 돋보이게 했습니다. 예를 들자면 작업복의 파란색과 수염의 주황색-빨간색이 있습니다. </p>
+
+                            <p class="text02">화가로서의 자화상은 반 고흐가 파리에서 제작한 마지막 작품이었습니다. 도시는 정신적으로나 육체적으로 그를 지치게 했습니다. 그는 여동생 윌에게 자신을 묘사한 내용은 ‘이마와 입가의 주름, 뻣뻣한 나무, 매우 붉은 수염, 꽤 단정치 못하고 슬픈' 등의 부정적인 문장으로 묘사하였다고 합니다.</p>
+                        </div> <!-- right -->
+
+                    </div> <!-- top -->
+
+                    <div class="bottom">
+
+                        <div class="info01">
+                            
+                            <h3><i class="bi bi-plus-circle puls01"></i><i class="bi bi-dash-circle minus01"></i></i><span>자료</span></h3>
+
+                            <div class="aa">
+                                <h4>F 번호</h4>
+                                <p class="sub_text">F0522</p>
+
+                                <h4>JH 번호</h4>
+                                <p class="sub_text">JH1356</p>
+
+                                <h4>개체 번호</h4>
+                                <p class="sub_text">65.1 cm x 50 cm, 86 cm x 71 cm</p>
+
+                                <h4>기원</h4>
+                                <p class="sub_text">1887년 12월에서 1888년 2월 사이에 그의 형 테오 반 고흐의 아파트에 그가 남겨두고 떠났다.</p>
+                                <p class="sub_text">1891년 1월 25일 사망 후, 그의 미망인 조반 고흐-봉거와 그들의 아들 빈센트 빌렘 반 고흐가 상속받은 뒤 1925년 9월 2일 사망할 때까지 관리되었다.</p>
+                                <p class="sub_text">1909년 조반 고흐-봉거가 암스테르담의 리크스 박물관에 대여하였다.</p>
+                                <p class="sub_text">1927년부터 1930년 까지 암스테르담의 리크스 박물관에 빈센트 빌렘 반 고흐가 대여하였다.</p>
+                                <p class="sub_text">1931년 10월 22일부터 빈센트 빌렘 반 고흐가 암스테르담의 슈테델리크 박물관에 대여하였다.</p>
+                                <p class="sub_text">1952년 3월 11일 빈센트 빌렘 반 고흐가 라렌의 빈센트 반 고흐 재단에 기부했다.</p>
+                                <p class="sub_text">1960년 12월 28일 빈센트 반 고흐 재단에 의해 라렌의 테오 반 고흐 재단으로 옮겨졌다.</p>
+                                <p class="sub_text">1962년 7월 21일 암스테르담의 빈센트 반 고흐 재단과 네덜란드 국가 사이에 체결된 협정은 암스테르담에서 실현될 소장품의 보존과 관리, 그리고 빈센트 반 고흐의 위치를 국가에 위탁하는 것이다.</p>
+                                <p class="sub_text">1962년 7월 21일 테오 반 고흐 재단이 빈센트 반 고흐 재단에   기부했다.</p>
+                                <p class="sub_text">1973년 6월 2일 암스테르담의 슈테델리크 박물관으로 임대되었고, 1973년 6월 2일부터 빈센트 반 고흐 박물관으로 임대되었다.</p>
+                            </div>
+                        </div> <!-- info -->
+
+                        <div class="info02">
+
+                            <h3><i class="bi bi-plus-circle puls02"></i><i class="bi bi-dash-circle minus02"></i><span>전시회</span></h3>
+
+                            <div class="bb">
+                                <p class="sub_text">런던, 코트울드 갤러리, 반 고흐의 자화상, 2022년 2월 3일 - 2022년 5월 8일</p>
+                                <p class="sub_text">암스테르담, 반 고흐 박물관, 옹게켄드. 베르할렌 론드 10 자란윈스텐, 2021년 2월 5일 - 2021년 9월 12일</p>
+                                <p class="sub_text">암스테르담, 반 고흐 박물관, 사진 속. 2020년 2월 21일 - 2020년 8월 30일 쿤스테나르스포르트레텐</p>
+                                <p class="sub_text">교토, 국립현대미술관(교토), 반 고흐 & 일본, 2018년 1월 20일 - 2018년 3월 4일</p>
+                                <p class="sub_text">도쿄, 도쿄 메트로폴리탄 미술관, 반 고흐 & 일본, 2017년 10월 24일 - 2018년 1월 8일</p>
+                                <p class="sub_text">삿포로, 반 고흐 & 일본 홋카이도 현대 미술관, 2017년 8월 26일 - 2017년 10월 15일</p>
+                                <p class="sub_text">암스테르담, 반 고흐 박물관, 드완진나비. 반 고흐 엔 지인 지크테, 2016년 7월 15일 - 2016년 9월 25일</p>
+                                <p class="sub_text">암스테르담, 반 고흐 박물관, 뭉크: 반 고흐, 2015년 9월 24일 - 2016년 1월 17일</p>
+                                <p class="sub_text">오슬로, 뭉크 박물관, 반 고흐 + 뭉크, 2015년 5월 9일 - 2015년 9월 6일</p>
+                                <p class="sub_text">파리, 오르세 미술관, 반 고흐/아르토 2014년 3월 11일 ~ 2014년 7월 6일</p>
+                                <p class="sub_text">암스테르담, 반 고흐 박물관, 반 고흐 헤테르크, 2013년 5월 1일 - 2014년 1월 13일</p>
+                                <p class="sub_text">암스테르담, 에르미타주 암스테르담, 빈센트. 2012년 9월 29일 - 2013년 4월 25일 암스테르담 드 에르미타주에 있는 헤트 반 고흐 박물관</p>
+                                <p class="sub_text">제노바, 두칼레 궁전(제누아), 고흐 일비아지오 디 고갱, 2011년 11월 12일 - 2012년 4월 30일</p>
+                                <p class="sub_text">바르셀로나, 피카소 박물관, 데보라 파리. 피카소 1900-1907, 2011년 7월 1일 - 2011년 10월 16일</p>
+                                <p class="sub_text">런던, 왕립 예술 아카데미, The Real Van Gogh: The Artist and His Letters, 2010년 1월 23일 - 2010년 4월 18일, 68호</p>
+                                <p class="sub_text">암스테르담, 반 고흐 박물관, 반 고흐스 브리벤. 2009년 10월 9일 - 2010년 1월 3일 데쿤스테나라안 두 단어</p>
+                                <p class="sub_text">2008년 10월 8일 - 2009년 2월 2일, 파리, 그랑팔레, 피카소 et les mattres</p>
+                                <p class="sub_text">뉴욕, 뉴 갤러리, 반 고흐와 표현주의, 2007년 3월 23일 - 2007년 7월 7일, no. zondernr.</p>
+                                <p class="sub_text">암스테르담, 반 고흐 박물관, 반 고흐 앙트 표현주의, 2006년 11월 24일 - 2007년 3월 4일</p>
+                                <p class="sub_text">나고야, 아이치 현립 미술관, 맥락상 반 고흐, 2005년 7월 26일 - 2005년 9월 25일, 제59호.</p>
+                                <p class="sub_text">오사카, 문맥상 반 고흐, 2005년 5월 31일 - 2005년 7월 18일, 제59호</p>
+                                <p class="sub_text">도쿄, 국립현대미술관(도쿄), 맥락상 반 고흐, 2005년 3월 23일 - 2005년 5월 22일, 제59호</p>
+                                <p class="sub_text">암스테르담, 반 고흐 박물관, 드 쿠즈 반 빈센트. 반 고흐스 뮤지엄 상상네어, 2003년 2월 14일 - 2003년 6월 15일</p>
+                                <p class="sub_text">암스테르담, 반 고흐 박물관, 반 고흐 앙 고갱. 헤타틀리에 반헤트 주이덴, 2002년 2월 9일 - 2002년 6월 2일, 54호</p>
+                                <p class="sub_text">시카고, 시카고 미술원, 반 고흐와 고갱. The Studio of the South, 2001년 9월 22일 - 2002년 1월 13일, 54호</p>
+                                <p class="sub_text">보스턴, 보스턴 미술관, 반 고흐. Face to Face, 2000년 7월 2일 - 2000년 9월 24일</p>
+                                <p class="sub_text">로스앤젤레스, 로스앤젤레스 카운티 미술관, 반 고흐의 반 고흐 작품. 암스테르담, 반 고흐 박물관의 걸작들, 1999년 1월 17일 - 1999년 5월 16일, 39호</p>
+                                <p class="sub_text">워싱턴, 국립미술관, 반 고흐의 반 고흐 작품. 암스테르담, 반 고흐 박물관의 걸작들, 1998년 10월 4일 - 1999년 1월 3일, 39호</p>
+                                <p class="sub_text">함부르크, 함부르크 쿤스트할레, 반 고흐. Die Pariser Selbstbildnisse, 1995년 3월 17일 - 5월 28일, no. zondernr.</p>
+                                <p class="sub_text">암스테르담, 반 고흐 박물관, 파리젤포르텐 반 빈센트 반 고흐, 1994년 6월 10일 - 1994년 10월 9일</p>
+                                <p class="sub_text">암스테르담, Rijks 박물관 빈센트 반 고흐, 빈센트 반 고흐 드 모던 쿤스트 1890-1914, 1990년 11월 16일 - 1991년 2월 18일, 제14호</p>
+                                <p class="sub_text">암스테르담, Rijks 박물관 빈센트 반 고흐, 빈센트 반 고흐. 실데리젠, 1990년 3월 30일 - 1990년 7월 29일, 34호</p>
+                                <p class="sub_text">파리, 오르세 미술관, 반 고흐 파리, 1988년 2월 2일 - 1988년 5월 15일, 68호</p>
+                                <p class="sub_text">베른, 쿤스 박물관 베른, 빈센트 반 고흐. 콜렉션 뒤 국립 박물관 빈센트 반 고흐 암스테르담, 1973년 1월 25일 - 1973년 4월 15일, 제17호</p>
+                                <p class="sub_text">스트라스부르, 스트라스부르 현대미술관, 빈센트 반 고흐. 콜렉션 뒤 국립 박물관 빈센트 반 고흐 암스테르담, 1972년 10월 22일 - 1973년 1월 15일, 제17호</p>
+                                <p class="sub_text">보르도, 보르도 미술관, 빈센트 반 고흐. 콜렉션 뒤 국립 박물관 빈센트 반 고흐 암스테르담, 1972년 4월 21일 - 1972년 6월 20일, 제16호</p>
+                                <p class="sub_text">파리, 오렌지 데 튈르리, 빈센트 반 고흐. 국립박물관 소장품 빈센트 반 고흐 암스테르담, 1971년 12월 21일 - 1972년 4월 10일, 제54호</p>
+                                <p class="sub_text">뉴욕, 브루클린 미술관, 빈센트 반 고흐. 회화 및 도면, 1971년 2월 14일 - 1971년 4월 4일, 제24호</p>
+                                <p class="sub_text">샌프란시스코, M.H. 드 영 기념 박물관, 빈센트 반 고흐. 회화 및 도면, 1970년 12월 11일 - 1971년 1월 31일, 제24호</p>
+                                <p class="sub_text">볼티모어, 볼티모어 미술관, 빈센트 반 고흐. 회화와 드로잉, 1970년 10월 11일 - 1970년 11월 29일, 제24호</p>
+                                <p class="sub_text">필라델피아 (펜실베이니아), 필라델피아 미술관, 빈센트 반 고흐. 회화 및 도면, 1970년 2월 28일 - 1970년 4월 5일, 제24호</p>
+                                <p class="sub_text">세인트루이스, 세인트루이스 시립미술관, 빈센트 반 고흐. 회화와 드로잉, 1969년 12월 20일 - 1970년 2월 1일, 제24호</p>
+                                <p class="sub_text">로스앤젤레스, 로스앤젤레스 카운티 미술관, 빈센트 반 고흐</p>
+                            </div>
+
+                            <div class="bb"></div>
+                        </div> <!-- info -->
+
+                    </div> <!-- bottom -->
+                </div> <!-- inner -->
+
+            </section>
+
+            <section id="other">
+                <div class="inner">
+
+                    <div class="others">
+                        <h2>관련 이야기</h2>
+
+                        <div class="others02">
+                            <div class="left">
+                                <img src="../../../images/sub/self_portrait14.png" alt="펠트 모자를 쓰고
+                                이젤 앞에 앉은 자화상">
+                            </div> <!-- left -->
+
+                            <div class="right">
+                                <h3>반고흐의 자화상</h3>
+                                <p>빈센트 반 고흐의 자화상에 대해 알아야 할 모든 것.</p>
+                                <div class="arrow">
+                                    <a href="#">바로가기</a>
+                                </div> <!-- arrow -->
+                            </div> <!-- right -->
+                        </div> <!-- others02 -->
+                    </div> <!-- others -->
+
+                </div> <!-- inner -->
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="inner">
+
+                <div class="left">
+                    <a href="../../../index.html"><img src="../../../images/common/VanGogh_Museum_Logo.png"
+                            alt="van gogh museum logo"></a>
+                    <p>Van Gogh Museum <br>
+                        Museumplein 6, 1071 DJ Amsterdam <br>
+                        +31 (0) 888-800-853</p>
+                </div> <!-- left -->
+
+                <div class="middle">
+                    <ul class="organiztion">
+                        <li class="title">ORGANIZATION</li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">News & Press</a></li>
+                        <li><a href="#">Organization</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Working with Us</a></li>
+                    </ul> <!-- organiztion -->
+
+                    <ul class="museum">
+                        <li class="title">MUSEUM</li>
+                        <li><a href="#">Address & Opening Hours</a></li>
+                        <li><a href="#">Tickets
+                            </a></li>
+                        <li><a href="#">Museum Shop</a></li>
+                    </ul> <!-- museum -->
+
+                    <ul class="information">
+                        <li class="title">INFORMATION</li>
+                        <li><a href="#">Accessibillty</a></li>
+                        <li><a href="#">Privacy & Cookies</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">Use & Permisions</a></li>
+                        <li><a href="#">Of Collection Images</a></li>
+                    </ul> <!-- information -->
+                </div> <!-- middle -->
+
+                <div class="right">
+                    <div class="images">
+                        <img src="../../../images/main/icon_facebook.png" alt="facebook">
+                        <img src="../../../images/main/icon_youtube.png" alt="youtube">
+                        <img src="../../../images/main/icon_twitter.png" alt="twitter">
+                        <img src="../../../images/main/icon_wifi.png" alt="wifi">
+                    </div>
+                    <p>&copy; Van Gogh Museum of Art. All Rights reserved.</p>
+                </div> <!-- right -->
+
+            </div> <!-- inner -->
+        </footer>
+    </div>
+    
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>

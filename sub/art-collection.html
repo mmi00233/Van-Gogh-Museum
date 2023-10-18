@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Gogh Museum</title>
+
+            <!-- 오픈그래프 설정-->
+<meta property="og:title" content="Van Gogh Museum"><!-- 타이틀 -->
+<meta property="og:url" content="http://test.dothome.co.kr"><!-- 도메인 -->
+<meta property="og:description" content="반 고흐의 삶을 엿볼 수 있는 곳, 빈센트 박물관"><!-- 간략한 설명, 모토나 슬로건,  -->
+<meta property="og:image" content="../images/common/og_img"><!-- 이미지 비율이 있음 (크기는 없음) 2:1 비율 -->
+
+<!-- 파비콘 -->
+<link rel="shortcut icon" href="../images/common/VanGogh_Museum_favi.ico"><!-- 크기 : 16*16 -->
+
+<!-- font -->
+<link rel="stylesheet" href="../css/font.css"><!-- 한글 폰트 -->
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jaldi:wght@400;700&family=Noto+Serif+Gujarati:wght@200;300&family=Reenie+Beanie&display=swap" rel="stylesheet"><!-- 영문 폰트 -->
+
+<!-- css -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> <!-- cdn방식으로 적용 -->
+<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/sub_art.css">
+
+<!-- js -->
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/sub.js"></script>
+    
+</head>
+<body>
+    
+    <header id="header">
+        <div class="inner">
+
+            <h1><a href="../index.html"><img src="../images/common/VanGogh_Museum_Logo.png" alt="Van Gogh Museum Logo"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li><a href="../sub/museum.html">MUSEUM</a>
+                        <ul class="depth2">
+                            <li><a href="../sub/museum.html">Museum</a></li>
+                            <li><a href="../sub/tikets.html">Tikets</a></li>
+                            <li><a href="../sub/museum-shop.html">Museum Shop</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../sub/Van-Gogh.html">VAN GOGH</a>
+                        <ul class="depth2">
+                            <li><a href="../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../sub/art-collection.html">ART & STORIES</a>
+                        <ul class="depth2">
+                            <li><a href="../sub/art-collection.html">Art</a></li>
+                            <li><a href="../sub/search.html">Search the Collection</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- gnb -->
+
+                <div class="ham">
+                    <span>메뉴보기</span>
+                </div> <!-- ham -->
+
+                <div class="mgnb_wrap">
+                    <div class="mgnb">
+                        <ul>
+                            <li class="a"><a href="../sub/museum.html">MUSEUM</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/museum.html">Museum</a></li>
+                                    <li><a href="../sub/tikets.html">Tikets</a></li>
+                                    <li><a href="../sub/museum-shop.html">Museum Shop</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="a"><a href="../sub/Van-Gogh.html">VAN GOGH</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="a"><a href="../sub/art-collection.html">ART & STORIES</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/art-collection.html">Art</a></li>
+                                    <li><a href="../sub/search.html">Search the Collection</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="mgnb_close">Close</div>
+                    </div> <!-- mgnb -->
+                </div> <!-- mgnb_wrap -->
+            </nav>
+
+            <ul class="util">
+                <li class="search"><img src="../images/common/icon_search_white.svg" alt="검색"></li>
+                <li class="language"><a href="#">KR<i class="down bi bi-caret-down-fill"></i></a>
+                    <ul>
+                        <li><a href="./html/en/index.html">EN</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- util -->
+
+        </div> <!-- inner -->
+
+        <div class="search_wrap">
+            <form>
+                <fieldset>
+                    <legend>검색영역</legend>
+                    <input type="text" title="검색어 입력" placeholder="검색어를 입력해 주세요.">
+                    <input type="submit" value="검색">
+                </fieldset>
+            </form>
+
+            <i class="bi bi-x-lg search_close" aria-label="검색영역닫기"></i>
+        </div> <!-- search_wrap -->
+    </header>
+
+    <div id="wrap">
+
+        <main id="container">
+
+            <section id="art">
+                <div class="inner">
+
+                    <div class="title">
+                        <h2>Art Collection</h2>
+                        <p class="sub_text">빈센트 반 고흐 (1853–1890)는 전세계적으로 유명한 화가 중 한 명입니다.<br>
+                        그의 자화상과 도면을 살펴보며 그의 작품들을 감상해봅시다.</p>
+
+                        <ul class="sub_list">
+                            <li class="circle all"><p>All</p></li>
+                            <li class="paintings"><p>Paintings</p></li>
+                            <li class="drawings"><p>Drawings</p></li>
+                        </ul>
+                    </div> <!-- title -->
+
+                    <div class="list">
+
+                        <div class="painting">
+
+                            <dl class="collection1 list_all list_painting">
+                                <dt>
+                                    <img src="../images/sub/collection01.jpg" alt="이젤 앞에 선 자화상">
+                                </dt>
+
+                                <dd class="sub_title">자화상</dd>
+                                <dd class="text">화가로서의 기술을 연습하기 위해 수많은 자화상을 그렸습니다.</dd>
+                                <dd class="btn_more"><a href="sub/Self-Portrais.html">자세히 알아보기</a></dd>
+                            </dl> <!-- collection01 -->
+
+                            <dl class="collection2 list_all list_painting">
+                                <dt>
+                                    <img src="../images/sub/collection02.jpg" alt="아몬드 꽃">
+                                </dt>
+
+                                <dd class="sub_title">풍경</dd>
+                                <dd class="text">자연을 사랑했고,
+                                    밖에서 그림을 그리는 것을 즐겼습니다.</dd>
+                                <dd class="btn_more"><a href="sub/Self-Portrais.html">자세히 알아보기</a></dd>
+                            </dl> <!-- collection02 -->
+
+                            <dl class="collection3 list_all list_painting">
+                                <dt>
+                                    <img src="../images/sub/collection03.jpg" alt="이젤 앞에 선 자화상">
+                                </dt>
+
+                                <dd class="sub_title">꽃과 꽃</dd>
+                                <dd class="text">해바라기와 붓꽃과 같은 인상적인 꽃 정물화를 많이 그렸습니다.</dd>
+                                <dd class="btn_more"><a href="sub/Self-Portrais.html">자세히 알아보기</a></dd>
+                            </dl> <!-- collection03 -->
+
+                        </div> <!-- painting -->
+
+                        <div class="drawing">
+
+                            <dl class="collection4 list_all list_drawing">
+                                <dt>
+                                    <img src="../images/sub/collection04.jpg" alt="가지친 버드나무">
+                                </dt>
+
+                                <dd class="sub_title">초기 도면
+                                <dd class="text">자신의 기술을 향상시키기 위해 수많은 그림을 그렸습니다.</dd>
+                                <dd class="btn_more"><a href="sub/Self-Portrais.html">자세히 알아보기</a></dd>
+                            </dl> <!-- collection04 -->
+
+                            <dl class="collection5 list_all list_drawing">
+                                <dt>
+                                    <img src="../images/sub/collection05.jpg" alt="파리 성곽의 문에서">
+                                </dt>
+
+                                <dd class="sub_title">파리에서 온 그림</dd>
+                                <dd class="text">파리에서 새로운 인상을 받았습니다. 카페와 대로,  센 강을 따라 풍경을 그렸습니다.</dd>
+                                <dd class="btn_more"><a href="sub/Self-Portrais.html">자세히 알아보기</a></dd>
+                            </dl> <!-- collection05 -->
+
+                            <dl class="collection6 list_all list_drawing">
+                                <dt>
+                                    <img src="../images/sub/collection06.jpg" alt="방 안의 창문">
+                                </dt>
+
+                                <dd class="sub_title">프랑스에서 온 그림</dd>
+                                <dd class="text">프랑스 남부에서 반 고흐는 도면에 그의 기술을 보여주는 작품을 많이 그렸습니다.</dd>
+                                <dd class="btn_more"><a href="sub/Self-Portrais.html">자세히 알아보기</a></dd>
+                            </dl> <!-- collection06 -->
+                        </div>
+
+                    </div> <!-- list -->
+                </div>
+            </section> <!-- art -->
+        </main>
+
+        <footer id="footer">
+            <div class="inner">
+
+                <div class="left">
+                    <a href="../index.html"><img src="../images/common/VanGogh_Museum_Logo.png" alt="van gogh museum logo"></a>
+                    <p>Van Gogh Museum <br>
+                        Museumplein 6, 1071 DJ Amsterdam <br>
+                        +31 (0) 888-800-853</p>
+                </div> <!-- left -->
+
+                <div class="middle">
+                    <ul class="organiztion">
+                        <li class="title">ORGANIZATION</li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">News & Press</a></li>
+                        <li><a href="#">Organization</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Working with Us</a></li>
+                    </ul> <!-- organiztion -->
+
+                    <ul class="museum">
+                        <li class="title">MUSEUM</li>
+                        <li><a href="#">Address & Opening Hours</a></li>
+                        <li><a href="#">Tickets
+                        </a></li>
+                        <li><a href="#">Museum Shop</a></li>
+                    </ul> <!-- museum -->
+
+                    <ul class="information">
+                        <li class="title">INFORMATION</li>
+                        <li><a href="#">Accessibillty</a></li>
+                        <li><a href="#">Privacy & Cookies</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">Use & Permisions</a></li>
+                        <li><a href="#">Of Collection Images</a></li>
+                    </ul> <!-- information -->
+                </div> <!-- middle -->
+
+                <div class="right">
+                    <div class="images">
+                        <img src="../images/main/icon_facebook.png" alt="facebook">
+                        <img src="../images/main/icon_youtube.png" alt="youtube">
+                        <img src="../images/main/icon_twitter.png" alt="twitter">
+                        <img src="../images/main/icon_wifi.png" alt="wifi">
+                    </div>
+                    <p>&copy; Van Gogh Museum of Art. All Rights reserved.</p>
+                </div> <!-- right -->
+
+            </div> <!-- inner -->
+        </footer>
+    </div>
+
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>

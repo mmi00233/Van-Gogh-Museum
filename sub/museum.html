@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Gogh Museum</title>
+<!-- 오픈그래프 설정-->
+<meta property="og:title" content="Van Gogh Museum"><!-- 타이틀 -->
+<meta property="og:url" content="http://test.dothome.co.kr"><!-- 도메인 -->
+<meta property="og:description" content="반 고흐의 삶을 엿볼 수 있는 곳, 빈센트 박물관"><!-- 간략한 설명, 모토나 슬로건,  -->
+<meta property="og:image" content="../images/common/og_img"><!-- 이미지 비율이 있음 (크기는 없음) 2:1 비율 -->
+
+<!-- 파비콘 -->
+<link rel="shortcut icon" href="../images/common/VanGogh_Museum_favi.ico"><!-- 크기 : 16*16 -->
+
+<!-- font -->
+<link rel="stylesheet" href="../css/font.css"><!-- 한글 폰트 -->
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Jaldi:wght@400;700&family=Noto+Serif+Gujarati:wght@200;300&family=Reenie+Beanie&display=swap" rel="stylesheet"><!-- 영문 폰트 -->
+
+<!-- css -->
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"> <!-- cdn방식으로 적용 -->
+<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/sub_museum.css">
+
+<!-- js -->
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/sub.js"></script>
+</head>
+<body>
+
+    <header id="header">
+        <div class="inner">
+
+            <h1><a href="../index.html"><img src="../images/common/VanGogh_Museum_Logo.png" alt="Van Gogh Museum Logo"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li><a href="../sub/museum.html">MUSEUM</a>
+                        <ul class="depth2">
+                            <li><a href="../sub/museum.html">Museum</a></li>
+                            <li><a href="../sub/tikets.html">Tikets</a></li>
+                            <li><a href="../sub/museum-shop.html">Museum Shop</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../sub/Van-Gogh.html">VAN GOGH</a>
+                        <ul class="depth2">
+                            <li><a href="../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../sub/art-collection.html">ART & STORIES</a>
+                        <ul class="depth2">
+                            <li><a href="../sub/art-collection.html">Art</a></li>
+                            <li><a href="../sub/search.html">Search the Collection</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- gnb -->
+
+                <div class="ham">
+                    <span>메뉴보기</span>
+                </div> <!-- ham -->
+
+                <div class="mgnb_wrap">
+                    <div class="mgnb">
+                        <ul>
+                            <li class="a"><a href="../sub/museum.html">MUSEUM</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/museum.html">Museum</a></li>
+                                    <li><a href="../sub/tikets.html">Tikets</a></li>
+                                    <li><a href="#">Museum Shop</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="a"><a href="../sub/Van-Gogh.html">VAN GOGH</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/Van-Gogh.html">Lift of Van Gogh</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="a"><a href="../sub/art-collection.html">ART & STORIES</a>
+                                <ul class="mdepth2">
+                                    <li><a href="../sub/art-collection.html">Art</a></li>
+                                    <li><a href="../sub/search.html">Search the Collection</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="mgnb_close">Close</div>
+                    </div> <!-- mgnb -->
+                </div> <!-- mgnb_wrap -->
+            </nav>
+
+            <ul class="util">
+                <li class="search"><img src="../images/common/icon_search.svg" alt="검색"></li>
+                <li class="language"><a href="#">KR<i class="down bi bi-caret-down-fill"></i></a>
+                    <ul>
+                        <li><a href="./html/en/index.html">EN</a></li>
+                    </ul>
+                </li>
+            </ul> <!-- util -->
+
+        </div> <!-- inner -->
+
+        <div class="search_wrap">
+            <form>
+                <fieldset>
+                    <legend>검색영역</legend>
+                    <input type="text" title="검색어 입력" placeholder="검색어를 입력해 주세요.">
+                    <input type="submit" value="검색">
+                </fieldset>
+            </form>
+
+            <i class="bi bi-x-lg search_close" aria-label="검색영역닫기"></i>
+        </div> <!-- search_wrap -->
+    </header>
+
+    <div id="wrap">
+
+        <main id="container">
+            <section id="museum">
+                <div class="inner">
+                    <h2 div data-aos="fade-left" data-aos-duration="1000">반 고흐의 지난 삶을 직접 체험할 수 있는 '빈센트 반 고흐 박물관'</h2>
+                    <img class="sub_title" data-aos="fade-left" data-aos-duration="2000" src="../images/sub/Discover-the-Life and-Work-of Vincent-van-Gogh.png" alt="Discover the Life and Work of Vincent van Gogh">
+
+                    <img src="../images/sub/vangogh_museum.jpg" alt="Van Gogh Museum">
+
+                    <div class="text" data-aos="fade-up" data-aos-duration="1000">
+                    <p>네덜란드 암스테르담에 위치해 세계 최대 고흐 컬렉션을 소장한 박물관입니다. 암스테르담 국립미술관, 마우리츠하위스와 함께 네덜란드 3대 미술관으로 손꼽히는 곳 이며, 4개의 층으로 구성된 이 박물관은 200점이 넘는 반고흐의 유화, 580점의 스케치, 4개의 스케치북과 그의 동생 테오에게 보내는 750통의 편지가 각각 전시되어 있습니다. 고흐의 작품을 시간대로 나우어 그가 예술가로써 성장하는 과정을 보여주고, 가족과 주고 받은 편지와 낡은 화첩을 통해 고흐의 삶을 다각적으로 이해할 수 있게 도와줍니다.
+                    </p>
+
+                    <p>반 고흐 미술관은 빈센트 반 고흐가 가장 아끼던 동생, 테오도르 반 고흐가 소장하고 있던 고흐의 그림 700여 점과 자필 편지 등을 기증 받아 1973년 개관하였습니다. 테오도르 반 고흐는 평생 형의 예술적 지지자이자 후원자로서 형과 각별하고 깊은 교감을 나누며 여러모로 중요한 역할을 했습니다. 테오도르는 하나뿐인 아들에게 형의 이름을 지어주었을 정도로 형을 사랑했으며, 테오도르는 형이 죽은 지 불과 5개월 만에 숨을 거두게 되었고, 그의 아내였던 요한나 봉헤르는 두 형제가 주고 받은 편지를 묶어 책으로 출간 한 뒤, 반 고흐의 회고전을 여는 등 고흐라는 화가를 세상에 알리는 데이 많은 기여를 했습니다. 또한 삼촌과 이름이 같은 빈센트 빌렌 반 고흐는 아버지와 어머니의 뒤를 이어 삼촌의 예술적 업적을 많은 이들에게 알리려고 노력하였는데, 반 고흐 미술관의 설립을 구상한 것도 바로 빈센트 빌렌 반 고흐 그입니다.</p>
+
+                    <p>1960년 반 고흐 재단이 설립된 후 1962년 암스테르담 정부는 반 고흐 박물관을 1963년에 건설 할 수 있도록 토지 국가 부담을 제공하였습니다. 그 뒤 1973년 6월, 반 고흐 박물관을 공식적으로 개장하였으며, 그 뒤 박물관은 암스테르담의 명승지가 되었습니다. 본래 한 건물이었던 반 고흐 미술관은 1999년에 기획 전시를 위한 신관이 새로 지어지며 두 건물이 되었고, 본관은 신조형주의의 대표적인 인물인 네덜란드 건축가 헤릿 리트벌트가, 신관은 도쿄 신국립 미술관을 지은 일본인 건축가 구로카오 기쇼가 각각 설계했습니다.</p>
+                </div>
+
+                    <div class="link_wrap">
+                        <div class="link">
+
+                            <p>Buy <br>
+                        Tickets</p>
+
+                            <div class="arrow">바로가기</div>
+
+                        </div> <!-- link -->
+                    </div>
+                </div>
+            </section> <!-- museum -->
+        </main>
+
+        <footer id="footer">
+            <div class="inner">
+
+                <div class="left">
+                    <a href="../index.html"><img src="../images/common/VanGogh_Museum_Logo.png" alt="van gogh museum logo"></a>
+                    <p>Van Gogh Museum <br>
+                        Museumplein 6, 1071 DJ Amsterdam <br>
+                        +31 (0) 888-800-853</p>
+                </div> <!-- left -->
+
+                <div class="middle">
+                    <ul class="organiztion">
+                        <li class="title">ORGANIZATION</li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">News & Press</a></li>
+                        <li><a href="#">Organization</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Working with Us</a></li>
+                    </ul> <!-- organiztion -->
+
+                    <ul class="museum">
+                        <li class="title">MUSEUM</li>
+                        <li><a href="#">Address & Opening Hours</a></li>
+                        <li><a href="#">Tickets
+                        </a></li>
+                        <li><a href="#">Museum Shop</a></li>
+                    </ul> <!-- museum -->
+
+                    <ul class="information">
+                        <li class="title">INFORMATION</li>
+                        <li><a href="#">Accessibillty</a></li>
+                        <li><a href="#">Privacy & Cookies</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Annual Report</a></li>
+                        <li><a href="#">Use & Permisions</a></li>
+                        <li><a href="#">Of Collection Images</a></li>
+                    </ul> <!-- information -->
+                </div> <!-- middle -->
+
+                <div class="right">
+                    <div class="images">
+                        <img src="../images/main/icon_facebook.png" alt="facebook">
+                        <img src="../images/main/icon_youtube.png" alt="youtube">
+                        <img src="../images/main/icon_twitter.png" alt="twitter">
+                        <img src="../images/main/icon_wifi.png" alt="wifi">
+                    </div>
+                    <p>&copy; Van Gogh Museum of Art. All Rights reserved.</p>
+                </div> <!-- right -->
+
+            </div> <!-- inner -->
+        </footer>
+    </div>
+
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>
